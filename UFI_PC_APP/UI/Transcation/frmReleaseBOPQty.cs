@@ -245,7 +245,7 @@ namespace UFI_PC_APP
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.RowIndex >= 0)
             {
-                if (string.IsNullOrEmpty(dgv.Rows[e.RowIndex].Cells["Enter_Qty"].Value.ToString()) ||
+                if (string.IsNullOrEmpty((string)dgv.Rows[e.RowIndex].Cells["Enter_Qty"].Value) ||
                     dgv.Rows[e.RowIndex].Cells["Enter_Qty"].Value.ToString() == "0")
                 {
                     GlobalVariable.mStoCustomFunction.setMessageBox(GlobalVariable.mSatoApps, "Enter Qty Can't be Blank Or Zero!!!", 2);

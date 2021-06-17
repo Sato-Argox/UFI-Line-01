@@ -391,7 +391,7 @@ namespace UFI_PC_APP
                 xlWorkSheet.Cells[5, 116] = "Module/Chamber Pressure   (kpa)";
                 xlWorkSheet.Cells[5, 117] = "Oil Leakage   (cm/mm)";
                 xlWorkSheet.Cells[5, 118] = "Service Flow  (mm/cm)";
-                xlWorkSheet.Cells[5, 119] = "Lasser Code";
+                xlWorkSheet.Cells[5, 119] = "Laser Code";
 
                 xlWorkSheet.Cells[5, 120] = "Result";
 
@@ -435,6 +435,7 @@ namespace UFI_PC_APP
                     {
 
                     }
+                    bC5hild = false;
                     b9Child = false;
                     b6Child = false;
                     counter = counter + 1;
@@ -1755,7 +1756,7 @@ namespace UFI_PC_APP
                 xlWorkSheet.Cells[5, 118] = "Module/Chamber Pressure   (kpa)";
                 xlWorkSheet.Cells[5, 119] = "Oil Leakage   (cm/mm)";
                 xlWorkSheet.Cells[5, 120] = "Service Flow  (mm/cm)";
-                xlWorkSheet.Cells[5, 121] = "Lasser Code";
+                xlWorkSheet.Cells[5, 121] = "Laser Code";
 
                 xlWorkSheet.Cells[5, 122] = "Result";
 

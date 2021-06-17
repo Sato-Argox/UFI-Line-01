@@ -43,14 +43,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Station_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BOP_NO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Child_Part_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Avail_Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Enter_Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRelease = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -283,6 +284,7 @@
             this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Station_No,
             this.Model,
+            this.BOP_NO,
             this.Child_Part_No,
             this.Avail_Qty,
             this.Enter_Qty,
@@ -302,45 +304,6 @@
             this.dgv.TabStop = false;
             this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             this.dgv.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgv_EditingControlShowing);
-            // 
-            // Station_No
-            // 
-            this.Station_No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Station_No.DataPropertyName = "Station_No";
-            this.Station_No.Frozen = true;
-            this.Station_No.HeaderText = "Sation No";
-            this.Station_No.Name = "Station_No";
-            // 
-            // Model
-            // 
-            this.Model.DataPropertyName = "Model";
-            this.Model.HeaderText = "Model";
-            this.Model.Name = "Model";
-            this.Model.ReadOnly = true;
-            // 
-            // Child_Part_No
-            // 
-            this.Child_Part_No.DataPropertyName = "Child_Part_No";
-            this.Child_Part_No.HeaderText = "Child Part No.";
-            this.Child_Part_No.Name = "Child_Part_No";
-            // 
-            // Avail_Qty
-            // 
-            this.Avail_Qty.DataPropertyName = "Avail_Qty";
-            this.Avail_Qty.HeaderText = "Available Qty.";
-            this.Avail_Qty.Name = "Avail_Qty";
-            // 
-            // Enter_Qty
-            // 
-            this.Enter_Qty.HeaderText = "Enter Qty.";
-            this.Enter_Qty.Name = "Enter_Qty";
-            // 
-            // btnRelease
-            // 
-            this.btnRelease.HeaderText = "Release";
-            this.btnRelease.Name = "btnRelease";
-            this.btnRelease.Text = "Release";
-            this.btnRelease.UseColumnTextForButtonValue = true;
             // 
             // label6
             // 
@@ -363,6 +326,61 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 216;
             this.pictureBox1.TabStop = false;
+            // 
+            // Station_No
+            // 
+            this.Station_No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Station_No.DataPropertyName = "Station_No";
+            this.Station_No.HeaderText = "Sation No";
+            this.Station_No.Name = "Station_No";
+            // 
+            // Model
+            // 
+            this.Model.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Model.DataPropertyName = "Model";
+            this.Model.HeaderText = "Model";
+            this.Model.Name = "Model";
+            this.Model.ReadOnly = true;
+            this.Model.Width = 119;
+            // 
+            // BOP_NO
+            // 
+            this.BOP_NO.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.BOP_NO.DataPropertyName = "BOP_NO";
+            this.BOP_NO.HeaderText = "BOP NO.";
+            this.BOP_NO.Name = "BOP_NO";
+            this.BOP_NO.Width = 118;
+            // 
+            // Child_Part_No
+            // 
+            this.Child_Part_No.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Child_Part_No.DataPropertyName = "Child_Part_No";
+            this.Child_Part_No.HeaderText = "Child Part No.";
+            this.Child_Part_No.Name = "Child_Part_No";
+            this.Child_Part_No.Width = 150;
+            // 
+            // Avail_Qty
+            // 
+            this.Avail_Qty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Avail_Qty.DataPropertyName = "Avail_Qty";
+            this.Avail_Qty.HeaderText = "Available Qty.";
+            this.Avail_Qty.Name = "Avail_Qty";
+            this.Avail_Qty.Width = 140;
+            // 
+            // Enter_Qty
+            // 
+            this.Enter_Qty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Enter_Qty.HeaderText = "Enter Qty.";
+            this.Enter_Qty.Name = "Enter_Qty";
+            this.Enter_Qty.Width = 190;
+            // 
+            // btnRelease
+            // 
+            this.btnRelease.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.btnRelease.HeaderText = "Release";
+            this.btnRelease.Name = "btnRelease";
+            this.btnRelease.Text = "Release";
+            this.btnRelease.UseColumnTextForButtonValue = true;
             // 
             // frmReleaseBOPQty
             // 
@@ -411,6 +429,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn Station_No;
         private System.Windows.Forms.DataGridViewTextBoxColumn Model;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BOP_NO;
         private System.Windows.Forms.DataGridViewTextBoxColumn Child_Part_No;
         private System.Windows.Forms.DataGridViewTextBoxColumn Avail_Qty;
         private System.Windows.Forms.DataGridViewTextBoxColumn Enter_Qty;
